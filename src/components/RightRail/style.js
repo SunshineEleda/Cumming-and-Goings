@@ -230,6 +230,12 @@ font-size: 30px;
   .left {
     background-color: #1D1D1B;
 width: 40%;
+.share {
+  padding-left: 200px;
+}
+.follow {
+   padding-left: 25px;
+}
 .blueGuy{
  padding-left:200px;
 }
@@ -238,17 +244,17 @@ width: 40%;
   flex-direction: row;
   padding: 20px 10px;
   // margin-left:20px;
-  background-color: #D8D8D8 !important;
+  // background-color: #D8D8D8 !important;
 
   svg {
-    padding-top:3px;
+    padding-top:5px;
     height:20px;
     width: 15px;
   }
   button {
     border: none;
-    background-color: #D8D8D8;
-    color: #006699;
+    background-color: #1D1D1B;
+    color: white;
     font-size:15px;
     
   }
