@@ -4,6 +4,7 @@ import ReactPlayer from 'react-player'
 
 import Card from '../Card/Card';
 import TopBar from '../TopBar/TopBar';
+import {Quizz} from '../Quizz'
 
 // Styles
 import { RootStyle, getNavCardStyle, getTopBarStyle, Overlay, OverlayBody } from './style';
@@ -37,7 +38,7 @@ console.log(isOverlay)
        <OverlayBody>
 
          <div className='navigation'>
-         <svg  className='close' xmlns="http://www.w3.org/2000/svg">
+         <svg  onClick={() => setIsOverlay(!isOverlay)} className='close' xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
                 fill="#069"
@@ -65,8 +66,11 @@ console.log(isOverlay)
          <button>Back to Article</button>
      
          </div>
-
+<div className='blueGuy'>
+<img src='images/BlueGuy.png'></img>
+</div>
          <div className='leftTitle'>
+           
            <h6>Vaccines</h6>
            </div>
 
@@ -78,7 +82,7 @@ console.log(isOverlay)
     <div className='container' onClick={() => {}}>
         <Card
               //  link='www.thetimes.co.uk'
-               image='images/image1.jpg'
+               image='images/1.png'
                title='The race for coronavirus vaccines: a graphical guide'
                label='How vaccines are made'
                navArrow
@@ -90,7 +94,7 @@ console.log(isOverlay)
 <div className='container'>
 <Card
               //  link='www.thetimes.co.uk'
-               image='images/image1.jpg'
+               image='images/Experts.png'
                title='What our experts say'
                label='Label'
                ></Card>
@@ -116,7 +120,7 @@ console.log(isOverlay)
         <div className='containerActive'>
         <Card
               //  link='www.thetimes.co.uk'
-               image='images/image1.jpg'
+               image='images/Quiz.png'
                title='Do you know all you can about vaccines'
                label='Quiz'
                navArrow
@@ -125,16 +129,23 @@ console.log(isOverlay)
 </div>
       
     <div className='container'>
-          Timeline
+    <Card
+              //  link='www.thetimes.co.uk'
+               image='images/Timeline.png'
+               label='Timeline'
+               navArrow
+
+               ></Card>
         </div>
     
 
         </div>
 
+       
+        </div>
+        </div>
         <div className='right'>
-<h1>Do you know all you can about vaccines</h1>
-        </div>
-        </div>
+<Quizz/>
         </div>
         </div>
        </OverlayBody>

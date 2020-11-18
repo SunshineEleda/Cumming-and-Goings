@@ -230,7 +230,9 @@ font-size: 30px;
   .left {
     background-color: #1D1D1B;
 width: 40%;
-
+.blueGuy{
+ padding-left:200px;
+}
 .Leftnavigation {
   display: flex;
   flex-direction: row;
@@ -342,6 +344,7 @@ padding-left: 15px;
   }
 
   .right {
+    width: 60%;
 
   }
 }

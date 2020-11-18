@@ -18,7 +18,12 @@ text-align: left;
       color: ${colors.lightGreen};
     }
 
-
+    img {
+      height: 95%;
+      width:95%;
+      margin-top: 3px;
+      padding-left: 5px;
+    }
 
     h4 {
       font-family: TimesModern-Regular;
@@ -45,11 +50,7 @@ margin-bottom: 10px;
       font-family: GillSansMTStd-Medium;
     }
 
-    img {
-      height: 12px;
-      margin-top: 3px;
-      padding-left: 5px;
-    }
+ 
   }
 
   
