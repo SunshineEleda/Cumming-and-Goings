@@ -66,7 +66,16 @@ console.log(isOverlay)
      
          </div>
 
+         <div className='leftTitle'>
+           <h6>Vaccines</h6>
+           </div>
 
+<div className='timelineBody'>
+
+  <div className='timelineLine'></div>
+  <div className='timelineLineBody'>
+
+    <div className='container' onClick={() => {}}>
         <Card
               //  link='www.thetimes.co.uk'
                image='images/image1.jpg'
@@ -75,16 +84,21 @@ console.log(isOverlay)
                navArrow
 
                ></Card>
+               </div>
 
+
+<div className='container'>
 <Card
               //  link='www.thetimes.co.uk'
                image='images/image1.jpg'
                title='What our experts say'
                label='Label'
                ></Card>
+               </div>
 
 
 
+<div className='container'>
          <div className='player-wrapper'>
            <div className='videoTitle'>Videos</div>
             <ReactPlayer
@@ -96,8 +110,10 @@ console.log(isOverlay)
 
             />
         </div>
+        </div>
 
 
+        <div className='containerActive'>
         <Card
               //  link='www.thetimes.co.uk'
                image='images/image1.jpg'
@@ -106,8 +122,9 @@ console.log(isOverlay)
                navArrow
 
                ></Card>
-
-        <div>
+</div>
+      
+    <div className='container'>
           Timeline
         </div>
     
@@ -116,6 +133,8 @@ console.log(isOverlay)
 
         <div className='right'>
 <h1>Do you know all you can about vaccines</h1>
+        </div>
+        </div>
         </div>
         </div>
        </OverlayBody>

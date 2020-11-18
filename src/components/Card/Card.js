@@ -25,8 +25,7 @@ export const NavCard = ({
           </div>
 
           {image && <img src={image}></img>}
-       
-          {navArrow && <div className='moreArticle'><p className="Link--primary">Read the full article</p> <img src='images/Blue.png'/></div>}
+      
         </div>
       </a>
     </div>

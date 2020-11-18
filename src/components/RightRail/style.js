@@ -109,7 +109,6 @@ export const getNavCardStyle = component => styled(component)`
 export const RootStyle = styled.div`
 padding-left:220px;
 padding-right: 220px;
-padding-bottom:20px;
 // position: absolute;
 // right: 0;
 // padding-top: 120rem;
@@ -229,27 +228,15 @@ font-size: 30px;
   padding-bottom: 50px;
 
   .left {
-    background-color: #F5F5F5;
+    background-color: #1D1D1B;
 width: 40%;
-padding: 20px 0;
-
-.player-wrapper {
-  padding-left: 10px;
-  padding-bottom:10px;
-
-  .videoTitle {
-    text-align: left;
-    font-family: TimesModern-Regular;
-    font-size:30px;
-    padding-bottom: 5px;
-  }
-}
 
 .Leftnavigation {
   display: flex;
   flex-direction: row;
-  margin-left:20px;
-  padding-bottom: 20px;
+  padding: 20px 10px;
+  // margin-left:20px;
+  background-color: #D8D8D8 !important;
 
   svg {
     padding-top:3px;
@@ -258,11 +245,99 @@ padding: 20px 0;
   }
   button {
     border: none;
-    background-color: #F5F5F5;
+    background-color: #D8D8D8;
     color: #006699;
     font-size:15px;
     
   }
+
+  
+}
+.leftTitle {
+  background-color: #8D724D;
+  padding: 8px 0;
+  margin-bottom:20px;
+  h6 {
+    color: white;
+    font-size:20px;
+    text-align: left;
+    padding-left:25px;
+  }
+}
+
+.timelineBody {
+  
+  .timelineLine {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .container {
+    position: relative;
+
+  }
+
+  .containerActive {
+    position: relative;
+  }
+
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: -8px;
+    background-color: #8D724D;
+    border: 4px solid #8D724D;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .containerActive::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+    z-index: 1;
+    right: 0.5px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+padding-left: 15px;
+  .timelineLineBody {
+    border-left: 2px solid #8D724D;
+
+    .player-wrapper {
+      padding-left: 10px;
+      padding-bottom:10px;
+    
+      .videoTitle {
+        text-align: left;
+        font-family: TimesModern-Regular;
+        font-size:30px;
+        padding-bottom: 5px;
+        color: white;
+      }
+  }
+}
+
+
 }
   }
 

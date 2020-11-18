@@ -23,10 +23,13 @@ text-align: left;
     h4 {
       font-family: TimesModern-Regular;
 font-size:30px;
+color: white;
+text-decoration: underline;
+margin-bottom: 10px;
     }
 
     .label {
-      color: #006699;
+      color: #8D724D;
       font-size: 25px;
       font-family: GillSansMTStd-Medium;
       padding-bottom: 5px;
